@@ -1,0 +1,36 @@
+*{ 
+    width: 95%;
+    margin: 0;
+    padding: 0.10%;
+    /* overflow-y: hidden;*/
+}
+
+/*con el ctrl + kc haces el comentario*/
+.titulo {
+    color: rgb(91, 27, 227);
+    /* # con 3 o 6 numeros esto se llama hex color o color hexadecimal. lo encontras en colorpicker.me*/
+}
+.fondo {
+    background:rgb(193, 233, 242)
+    /* para colocar el color de fondo*/    
+}
+
+.verde {
+    color: rgb(8, 152, 22);
+  }
+.rojo {
+    color:rgb(194, 14, 14) ;
+  }
+
+  .card {
+    width: 18rem;
+  }
+
+  .imagen{
+    background-image: url(../img/Playa.png);
+ }
+ 
+/* body {
+     background: url(../img/Playa.png);
+} Dale Toma la image y lo coloca dentro del Body */
+
