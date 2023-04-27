@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+ <!--Css only-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ <script src="https://kit.fontawesome.com/d55e78fe7e.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" type="text/css" href="assets 1/Css/styles.css">
+ <!--Estilo de fuentes-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<!--Barra de navegacion-->
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href= "proyectoCV.html">
+        <img src="assets 1/Img/ApLogo1.png" alt="" width="100%" height="">
+      </a>    
+      <ul class=" list-group list-group-horizontal">
+          <!--Boton que envia al login-->
+         <li class="list-group-item">
+          <a href="login.html"> <i class="fa-solid fa-user fa-2xl" type="button"></i> </a>
+         </li>
+      </ul>
+    </div>
+</nav>
+</header>
+<main class="body pt-5">
+  <!-- Idea 1 Panel de administración-->
+  <div class="">
+    <div class="row pt-5">
+      <div class="col-2">
+        <nav class="administracion" id="list-tab" role="tablist"> 
+          <ul>
+            <li> 
+              <a class="list-group-item list-group-item-action active" id="list-redes-list" data-bs-toggle="list"
+                href="list-redes" role="tab"  aria-controls="list-redes">
+               <i class="fa-solid fa-square-share-nodes"></i> Redes</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" id="list-banner-list" data-bs-toggle="list" 
+              href="list-banner" role="tab" aria-controls="list-banner">
+              <i class="fa-regular fa-image"></i> Banner</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" id="list-info-list" data-bs-toggle="list" 
+              href="list-info" role="tab" aria-controls="list-info">
+              <i class="fa-solid fa-align-left"></i> Info</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" id="list-experiencia-list" data-bs-toggle="list" 
+              href="list-experiencia" role="tab" aria-controls="list-experiencai">
+              <i class="fa-solid fa-briefcase"></i> Experiencia</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" id="list-educacion-list" data-bs-toggle="list" 
+              href="list-educacion" role="tab" aria-controls="list-educacion">
+              <i class="fa-solid fa-chalkboard-user"></i> Educación</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" id="list-habilidades-list" data-bs-toggle="list" 
+              href="list-habilidades" role="tab" aria-controls="list-habilidades">
+              <i class="fa-solid fa-arrows-turn-to-dots"></i> Habilidades</a>
+            </li>
+            <li>
+              <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list" 
+              href="list-proyectos" role="tab" aria-controls="list-proyectos">
+              <i class="fa-solid fa-laptop-code"></i> Proyectos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Sector Redes-->
+      <div class="col-8">
+        <div class="modal-body">
+            <div class="tab-content" id="nav-tabContent">
+             <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list"> 
+               <div class="container px-5" >
+                <form>
+              <div class="mb-3">
+                <label for="linkedin" class="form-label">LinkedIn</label>
+                <input type="text" class="form-control" id="linkedin">
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="submit" class="btn btn-secondary">Actualizar</button>
+                  <button type="submit" class="btn btn-dark">Eliminar</button>
+              </div>
+              </div>
+              <div class="mb-3">
+                <label for="github" class="form-label">Github</label>
+                <input type="text" class="form-control" id="github">
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="submit" class="btn btn-secondary">Actualizar</button>
+                  <button type="submit" class="btn btn-dark">Eliminar</button>
+              </div>
+              </div>
+              <div class="mb-3">
+                <label for="instagram" class="form-label">Instagram</label>
+                <input type="text" class="form-control" id="instagram">
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="submit" class="btn btn-secondary">Actualizar</button>
+                  <button type="submit" class="btn btn-dark">Eliminar</button>
+              </div>
+              </div>
+                </form>
+              </div> 
+        </div>   
+        <!--Sector Banner-->
+        <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">
+          <div class="container px-5" >
+            <form>
+          <div class="mb-3">
+            <label for="bannerUno" class="form-label">Banner 1</label>
+            <input class="form-control" type="file" id="bannerUno">
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+          </div>
+          </div>
+          <div class="mb-3">
+            <label for="bannerDos" class="form-label">Banner 2</label>
+            <input class="form-control" type="file" id="bannerDos">
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+          </div>
+          </div>
+          <div class="mb-3">
+            <label for="bannerTres" class="form-label">Banner 3</label>
+            <input class="form-control" type="file" id="bannerTres">
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+          </div>
+          </div>
+            </form>
+          </div> 
+        </div>
+        <!--Sector Info-->
+        <div class="tab-pane fade" id="list-info" role="tabpanel" aria-labelledby="list-info-list">
+          <div class="container px-5" >
+            <form>
+          <div class="mb-3">
+            <label for="info" class="form-label">Info</label>
+              <textarea class="form-control" id="info" style="height: 100px"></textarea>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+          </div>
+          </div>
+            </form>
+          </div> 
+        </div>
+        <!--Sector Experiencia-->
+        <div class="tab-pane fade" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">
+          <div class="container px-5" >
+            <form>
+          <div class="mb-3">
+            <label for="experiencia" class="form-label">Experiencia</label>
+            <textarea class="form-control" id="experiencia" style="height: 100px"></textarea>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+          </div>
+          </div>
+            </form>
+          </div> 
+        </div>
+        <!--Sector Educación-->
+        <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list"> 
+          <div class="container px-5" >
+            <form>
+              <div class="mb-3">
+                <label for="educacionUno" class="form-label">Educación 1</label>
+                <input class="form-control" type="file" id="educacionUno">
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="submit" class="btn btn-secondary">Actualizar</button>
+                  <button type="submit" class="btn btn-dark">Eliminar</button>
+              </div>
+              </div>
+              <div class="mb-3">
+                <label for="educacionDos" class="form-label">Educación 2</label>
+                <input class="form-control" type="file" id="educacioDos">
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="submit" class="btn btn-secondary">Actualizar</button>
+                  <button type="submit" class="btn btn-dark">Eliminar</button>
+              </div>
+              </div>
+              <div class="mb-3">
+                <label for="educacionTres" class="form-label">Educación 3</label>
+                <input class="form-control" type="file" id="educacioTres">
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="submit" class="btn btn-secondary">Actualizar</button>
+                  <button type="submit" class="btn btn-dark">Eliminar</button>
+              </div>
+              </div>
+                </form>
+          </div> 
+        </div>
+        <!--Sector Habilidades-->
+        <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">
+          <div class="container px-5" >
+            <form>
+         <!--Habilidades 1-->
+            <div class="row"> 
+              <div class="col-6 my-3">
+                <label for="habilidadesUno" class="form-label">Habilidades</label>
+                <input type="text" class="form-control" id="habilidadesUno">
+              </div>
+              <div class="col-6 my-3">
+                 <label for="porcentajeUno" class="form-label">Porcentaje</label>
+                 <input type="text" class="form-control" id="porcentajeUno">
+              </div>
+            </div>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+         <!--Habilidades 2-->
+              <div class="row"> 
+                <div class="col-6 my-3">
+                  <label for="habilidadesDos" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesDos">
+                </div>
+                <div class="col-6 my-3">
+                   <label for="porcentajeDos" class="form-label">Porcentaje</label>
+                   <input type="text" class="form-control" id="porcentajeDos">
+                </div>
+              </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="submit" class="btn btn-secondary">Actualizar</button>
+                <button type="submit" class="btn btn-dark">Eliminar</button>
+          <!--Habilidades 3-->
+                <div class="row"> 
+                  <div class="col-6 my-3">
+                    <label for="habilidadesTres" class="form-label">Habilidades</label>
+                    <input type="text" class="form-control" id="habilidadesTres">
+                  </div>
+                  <div class="col-6 my-3">
+                     <label for="porcentajeTres" class="form-label">Porcentaje</label>
+                     <input type="text" class="form-control" id="porcentajeTres">
+                  </div>
+                </div>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="submit" class="btn btn-secondary">Actualizar</button>
+                  <button type="submit" class="btn btn-dark">Eliminar</button>
+         <!--Habilidades 4-->
+                  <div class="row"> 
+                    <div class="col-6 my-3">
+                      <label for="habilidadesCuatro" class="form-label">Habilidades</label>
+                      <input type="text" class="form-control" id="habilidadesCuatro">
+                    </div>
+                    <div class="col-6 my-3">
+                       <label for="porcentajeCuatro" class="form-label">Porcentaje</label>
+                       <input type="text" class="form-control" id="porcentajeCuatro">
+                    </div>
+                  </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-secondary">Actualizar</button>
+                    <button type="submit" class="btn btn-dark">Eliminar</button>
+       <!--Habilidades 5--> 
+                  <div class="row"> 
+                    <div class="col-6 my-3">
+                      <label for="habilidadesTres" class="form-label">Habilidades</label>
+                      <input type="text" class="form-control" id="habilidadesTres">
+                    </div>
+                   <div class="col-6 my-3">
+                      <label for="porcentajeTres" class="form-label">Porcentaje</label>
+                      <input type="text" class="form-control" id="porcentajeTres">
+                   </div>
+                 </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-secondary">Actualizar</button>
+                    <button type="submit" class="btn btn-dark">Eliminar</button>
+       <!--Habilidades 6--> 
+                    <div class="row"> 
+                      <div class="col-6 my-3">
+                        <label for="habilidadesSeis" class="form-label">Habilidades</label>
+                        <input type="text" class="form-control" id="habilidadesSeis">
+                      </div>
+                      <div class="col-6 my-3">
+                         <label for="porcentajeSeis" class="form-label">Porcentaje</label>
+                         <input type="text" class="form-control" id="porcentajeSeis">
+                      </div>
+                    </div>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                      <button type="submit" class="btn btn-secondary">Actualizar</button>
+                      <button type="submit" class="btn btn-dark">Eliminar</button>
+       <!--Habilidades 7-->
+                      <div class="row"> 
+                        <div class="col-6 my-3">
+                          <label for="habilidadesSiete" class="form-label">Habilidades</label>
+                          <input type="text" class="form-control" id="habilidadesSiete">
+                        </div>
+                        <div class="col-6 my-3">
+                           <label for="porcentajeSiete" class="form-label">Porcentaje</label>
+                           <input type="text" class="form-control" id="porcentajeSiete">
+                        </div>
+                      </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="submit" class="btn btn-secondary">Actualizar</button>
+                        <button type="submit" class="btn btn-dark">Eliminar</button>
+       <!--Habilidades 8--> 
+                        <div class="row"> 
+                          <div class="col-6 my-3">
+                            <label for="habilidadesOcho" class="form-label">Habilidades</label>
+                            <input type="text" class="form-control" id="habilidadesOcho">
+                          </div>
+                          <div class="col-6 my-3">
+                             <label for="porcentajeOcho" class="form-label">Porcentaje</label>
+                             <input type="text" class="form-control" id="porcentajeOcho">
+                          </div>
+                        </div>
+                          <button type="submit" class="btn btn-primary">Guardar</button>
+                          <button type="submit" class="btn btn-secondary">Actualizar</button>
+                          <button type="submit" class="btn btn-dark">Eliminar</button>
+        <!--Habilidades 9--> 
+                          <div class="row"> 
+                            <div class="col-6 my-3">
+                              <label for="habilidadesNueve" class="form-label">Habilidades</label>
+                              <input type="text" class="form-control" id="habilidadesNueve">
+                            </div>
+                            <div class="col-6 my-3">
+                               <label for="porcentajeNueve" class="form-label">Porcentaje</label>
+                               <input type="text" class="form-control" id="porcentajeNueve">
+                            </div>
+                          </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="submit" class="btn btn-secondary">Actualizar</button>
+                            <button type="submit" class="btn btn-dark">Eliminar</button>
+        <!--Habilidades 10-->  
+                            <div class="row"> 
+                              <div class="col-6 my-3">
+                                <label for="habilidadesDies" class="form-label">Habilidades</label>
+                                <input type="text" class="form-control" id="habilidadesDies">
+                              </div>
+                              <div class="col-6 my-3">
+                                 <label for="porcentajeDies" class="form-label">Porcentaje</label>
+                                 <input type="text" class="form-control" id="porcentajeDies">
+                              </div>
+                            </div>
+                              <button type="submit" class="btn btn-primary">Guardar</button>
+                              <button type="submit" class="btn btn-secondary">Actualizar</button>
+                              <button type="submit" class="btn btn-dark">Eliminar</button>  
+            </form>
+           </div> 
+          </div> 
+          <!--Sector Proyectos-->
+        <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
+          <!--Primera parte de proyectos-->
+          <div class="container px-5" >
+            <form>
+          <div class="mb-3">
+            <label for="proyectoUno" class="form-label">Imagen</label>
+            <input type="file" class="form-control" id="proyectoUno">
+          </div>
+          <div class="mb-3">
+            <label for="proyectoDos" class="form-label">Título</label>
+            <input type="file" class="form-control" id="proyectoDos">
+          </div>  
+          <div class="mb-3">
+            <label for="proyectoDos" class="form-label">Descripción</label>
+            <input type="file" class="form-control" id="proyectoDos">
+          </div> 
+          <div class="mb-3">
+            <label for="proyectoDos" class="form-label">Enlace</label>
+            <input type="file" class="form-control" id="proyectoDos">
+          </div> 
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+            </form>
+          </div> 
+          <!--Segunda parte de proyectos-->
+          <div class="container px-5" >
+            <form>
+          <div class="mb-3">
+            <label for="proyectoUno" class="form-label">Imagen</label>
+            <input type="file" class="form-control" id="proyectoUno">
+          </div>
+          <div class="mb-3">
+            <label for="proyectoDos" class="form-label">Título</label>
+            <input type="file" class="form-control" id="proyectoDos">
+          </div>  
+          <div class="mb-3">
+            <label for="proyectoDos" class="form-label">Descripción</label>
+            <input type="file" class="form-control" id="proyectoDos">
+          </div> 
+          <div class="mb-3">
+            <label for="proyectoDos" class="form-label">Enlace</label>
+            <input type="file" class="form-control" id="proyectoDos">
+          </div> 
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-secondary">Actualizar</button>
+              <button type="submit" class="btn btn-dark">Eliminar</button>
+            </form>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+    </div>
+    </div>
+  </div> 
+  </div>
+</main>
+      
+<!--Footer-->
+<footer class="footer" >
+    <div class="text-white text text-center fs-6">
+    <div class="container-footer">
+      <div class="footer-row">
+        <p>&copy 2022 - Nancy Vargas - nancynativ@gmail.com</p>
+      </div>
+    </div>
+  </div>
+   </footer>
+  
+<!--JavaScript Bundle with Popper-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>    
+</body>
+</html>
