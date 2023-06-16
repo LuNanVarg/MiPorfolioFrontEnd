@@ -1,0 +1,41 @@
+/*Error 404*/ 
+body {
+   background: #f6f6f6;
+   font-family: 'Chakra Petch', sans-serif;
+   position: relative;
+}
+.container-img {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container-img h1 {
+    font-size: 2.5rem;
+    color: #020024;
+    position: absolute;
+    top: 85%;
+    left: 22%;
+    text-shadow: 0 0 8px rgba(0,0,0,0.6);
+
+
+
+}
+
+/*Primera prueba para el elemento de texto 
+.error404 h1 { 
+    padding: 1rem 0;
+    margin-left: 5rem;
+    justify-content: center;
+    color: #020024;
+    font-size: 35px; 
+}
+*/
+button {
+    padding: 13px 30px;
+    border-radius: 15px; 
+    border: none;
+    background: #020024; 
+    color: aliceblue;
+}
